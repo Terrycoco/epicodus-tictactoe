@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html, body {
+  background-color:lightgray;
+  font-size: 1em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* 12 column grid */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+  /*float each column to left and add padding*/
+  [class*="col-"] {
+      float: left;
+  }
+  /*clear floats at end of each row div*/
+  .row:after {
+      content: "";
+      clear: both;
+      display: block;
+  }
+  #container {
+    max-width:  1200px; /*using max-width allows resizing on shrink instead of scrollbar*/
+    margin: 0 auto;
+    background-color: lightgray;
+  }
+
+button {
+  background-color: darkblue;
+  color: white;
+  width: 100px;
+  height: 50px;
+  margin:5px auto;
+}
+
+/*my styles start here*/
+#header {
+  width: 100%;
+  margin: 10px auto;
+  padding:10px;
+  background-color: lightgray;
+}
+
+
+#board {
+    border: 3px solid darkblue;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 315px;
+}
+
+.space {
+  display: table-cell;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 3em;
+  background-color :#33b5e5;
+  border: 1px solid darkblue;
+  padding: 5px;
+  color: darkblue;
+}
+
+.space:hover {
+  background-color: #0099cc;
+}
+
+.winner {
+  background-color: green;
+}
+
+#scoring {
+  text-align: center;
+  vertical-align: middle;
+}
+#scoring th {
+  background-color: darkblue;
+  color: white;
+  font-size: 40px;
+}
+#scoring td {
+  width: 50px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#sidebar h3 {
+  width: 50%;
+  margin: auto;
+}
+
+#footer {
+  clear: both;
+  padding: 10px;
+  background-color: lightGray;
+}
